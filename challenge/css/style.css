@@ -1,0 +1,88 @@
+/*
+Fonts
+Primary: Gemini - font-family: 'Gemunu Libre', sans-serif;
+Secondary: Oswald - font-family: 'Oswald', sans-serif;
+*/
+
+body {
+    background-color: rgb(194, 213, 221);
+}
+
+p {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+li {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    /* 50% {background: greenyellow;} */
+    100% {opacity: 1;}
+}
+
+.image-grid{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    margin: 20px 20px 20px 20px;
+    transition: all 300ms ease;
+}
+
+img:hover {
+    border: 30px 50px;
+    width: 500px;
+    height: 250px;
+    
+}
+
+.sidebar {
+    float: right;
+    background: rgb(209, 182, 136);
+}
+
+#image-1 {
+    float: right;
+    margin: 15px;
+	height: 300px;
+}
+
+#main{
+    animation: fade-in 2000ms;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 30px;
+    width: 100%;
+}
+
+.post {
+    border: solid darkorange;
+    padding: 5px;
+    margin: 10px;
+}
+
+.post > a {
+    font-family: 'Oswald', sans-serif;
+    color: blue;
+    text-decoration: none;
+    margin-left: 5px;
+	margin-right: 5px;
+    transition: 500ms all;
+}
+
+.post > a:hover{
+    color: rgb(2, 171, 171);
+}
